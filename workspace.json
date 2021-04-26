@@ -1,8 +1,6 @@
 {
   "version": 2,
-  "cli": {
-    "defaultCollection": "@nrwl/express"
-  },
+  "cli": { "defaultCollection": "@nrwl/express" },
   "defaultProject": "server",
   "generators": {
     "@nrwl/react": {
@@ -11,13 +9,8 @@
         "linter": "eslint",
         "babel": true
       },
-      "component": {
-        "style": "styled-components"
-      },
-      "library": {
-        "style": "styled-components",
-        "linter": "eslint"
-      }
+      "component": { "style": "styled-components" },
+      "library": { "style": "styled-components", "linter": "eslint" }
     }
   },
   "projects": {
@@ -51,15 +44,11 @@
         },
         "serve": {
           "executor": "@nrwl/node:execute",
-          "options": {
-            "buildTarget": "server:build"
-          }
+          "options": { "buildTarget": "server:build" }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
-          "options": {
-            "lintFilePatterns": ["apps/server/**/*.ts"]
-          }
+          "options": { "lintFilePatterns": ["apps/server/**/*.ts"] }
         },
         "test": {
           "executor": "@nrwl/jest:jest",
@@ -117,13 +106,9 @@
         },
         "serve": {
           "executor": "@nrwl/web:dev-server",
-          "options": {
-            "buildTarget": "client:build"
-          },
+          "options": { "buildTarget": "client:build" },
           "configurations": {
-            "production": {
-              "buildTarget": "client:build:production"
-            }
+            "production": { "buildTarget": "client:build:production" }
           }
         },
         "lint": {
@@ -155,15 +140,30 @@
             "devServerTarget": "client:serve"
           },
           "configurations": {
-            "production": {
-              "devServerTarget": "client:serve:production"
-            }
+            "production": { "devServerTarget": "client:serve:production" }
           }
         },
         "lint": {
           "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["apps/client-e2e/**/*.{js,ts}"] }
+        }
+      }
+    },
+    "contract": {
+      "root": "libs/contract",
+      "sourceRoot": "libs/contract/src",
+      "projectType": "library",
+      "targets": {
+        "lint": {
+          "executor": "@nrwl/linter:eslint",
+          "options": { "lintFilePatterns": ["libs/contract/**/*.ts"] }
+        },
+        "test": {
+          "executor": "@nrwl/jest:jest",
+          "outputs": ["coverage/libs/contract"],
           "options": {
-            "lintFilePatterns": ["apps/client-e2e/**/*.{js,ts}"]
+            "jestConfig": "libs/contract/jest.config.js",
+            "passWithNoTests": true
           }
         }
       }

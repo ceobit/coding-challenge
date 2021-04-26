@@ -1,3 +1,7 @@
 module.exports = {
-  projects: ['<rootDir>/apps/server', '<rootDir>/apps/client'],
+  projects: [
+    '<rootDir>/apps/server',
+    '<rootDir>/apps/client',
+    '<rootDir>/libs/contract',
+  ],
 };

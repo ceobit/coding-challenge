@@ -1,18 +1,24 @@
-/**
- * This is not a production server yet!
- * This is only a minimal backend to get started.
- */
-
 import * as express from 'express';
+
+import api from './api';
 
 const app = express();
 
-app.get('/api', (req, res) => {
-  res.send({ message: 'Welcome to server!' });
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.use('/api', api);
+
+app.get('/hello-world', (_, res) => {
+  res.send({
+    message: 'Hello to you too! :)',
+  });
 });
 
 const port = process.env.port || 3333;
+
 const server = app.listen(port, () => {
   console.log(`Listening at http://localhost:${port}/api`);
 });
+
 server.on('error', console.error);
