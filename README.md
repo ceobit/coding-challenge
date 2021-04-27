@@ -1,4 +1,4 @@
-# FullstackInterview
+# Typescript Backend or Frontend or Fullstack Interview
 
 Hi there stranger - we're the devs of the company you're applying for. This little repo seems big at first, but it's really not. We've knitted together a nice little coding "challenge" for you to kick off our technical interview with you.
 
