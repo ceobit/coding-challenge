@@ -4,20 +4,23 @@ Hi there stranger - we're the devs of the company you're applying for. This litt
 
 In order to not put too much pressure on you, you should have gotten the option to prepare this up front and might read this on your own right now. That's fine, let's introduce you to this repo.
 
+This project was generated using [Nx](https://nx.dev). It's a nice little toolchain to manage packages and centralises package management. You can start the `server` and `client` concurrently with running the following command:
+```bash
+> npm install && npm start
+```
+
+# The Coding Challenge
+
 This repo has two basic skeletons already prepared for you, the server and the client side - as follows:
 
-## Server Side (Backend)
+### Server Side (Backend)
 
-This is more relevant to you if you are going to apply for a backend position. Please have a look into the [./apps/api/README.md](./apps/api/README.md)
+This is more relevant to you if you are going to apply for a backend position. Please have a look into the [./apps/server/README.md](./apps/server/README.md)
 
-## Client Side (Frontend)
+### Client Side (Frontend)
 
-This is more relevant to you if you are going to apply for a frontend position. Please have a look into the [./apps/web-app/README.md](./apps/web-app/README.md)
+This is more relevant to you if you are going to apply for a frontend position. Please have a look into the [./apps/client/README.md](./apps/client/README.md)
 
-## Further help
-
-This project was generated using [Nx](https://nx.dev).
-
-<p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
+# Further help (Nx)
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
