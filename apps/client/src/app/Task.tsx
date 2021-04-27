@@ -13,6 +13,18 @@ const StyledTask = styled.div`
 export const Task: FC = () => {
   return (
     <StyledTask>
+      <h1>Hi there!</h1>
+
+      <p>
+        Your task is quite easy to implement: You're going to build a currency
+        converter
+      </p>
+
+      <img
+        alt="tada"
+        src="https://a.slack-edge.com/production-standard-emoji-assets/13.0/google-large/1f389@2x.png"
+      />
+
       <h2>Coding Challange:</h2>
 
       <p>
@@ -47,14 +59,7 @@ export const Task: FC = () => {
         </li>
 
         <li>
-          <p>Write basic e2e test</p>
-        </li>
-
-        <li>
-          <p>
-            Draw a line chart representing the value of the conversion in last
-            30 days using any chart library (eg. https://d3js.org)
-          </p>
+          <p>Write basic <code>e2e</code> tests - check out the <code>apps/client-e2e</code> folder ;)</p>
         </li>
       </ol>
 
