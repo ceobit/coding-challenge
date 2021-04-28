@@ -15,6 +15,8 @@ export const App: FC = () => {
         <Task />
       </main>
 
+      {/* YOUR CODE HERE */}
+
     </StyledAppFrame>
   );
 }
