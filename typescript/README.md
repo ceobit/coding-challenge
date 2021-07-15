@@ -4,7 +4,10 @@ Hi there stranger - we're the devs of the company you're applying for. This litt
 
 In order to not put too much pressure on you, you should have gotten the option to prepare this up front and might read this on your own right now. That's fine, let's introduce you to this repo.
 
-This project was generated using [Nx](https://nx.dev). It's a nice little toolchain to manage packages and centralises package management. You can start the `server` and `client` concurrently with running the following command:
+This project was generated using [Nx](https://nx.dev). It's a nice little toolchain to manage packages and centralises package management.
+
+Make sure you use **npm@7.x.x** since package-lock v2 is used.
+You can start the `server` and `client` concurrently with running the following command:
 ```bash
 > npm install && npm start
 ```
