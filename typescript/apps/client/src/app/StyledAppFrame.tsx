@@ -9,7 +9,12 @@ export const StyledAppFrame = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  //justify-content: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 4px 4px 12px 0 rgba(34, 60, 80, 0.2);
+  height: 25vh;
+  width: 30vw;
 
   header {
     background-color: #143055;

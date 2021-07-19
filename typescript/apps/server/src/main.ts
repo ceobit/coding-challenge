@@ -1,11 +1,24 @@
-import * as express from 'express';
+import express from 'express';
+import cors from 'cors';
 
 import api from './api';
 
 const app = express();
 
+// added CORS support
+const allowedOrigins = ['http://localhost:4200'];
+
+const options: cors.CorsOptions = {
+  origin: allowedOrigins
+};
+
+// Then pass these options to cors:
+app.use(cors(options));
+
+
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
 
 app.use('/api', api);
 
