@@ -17,3 +17,5 @@
 <p>I added an API file and a file with constants as well</p>
 
 <p><a href='https://github.com/ceobit/coding-challenge/blob/master/typescript/apps/client-e2e/src/integration/converter-e2e.spec.tsx'>Here</a> are the e2e tests</p>
+
+<p>P.S. Unfortunately, I haven't used NX before and I had certain problem to run "affected:test" and "affected:e2e" commands. So I use "test" and "e2e" in order to run tests </p>
