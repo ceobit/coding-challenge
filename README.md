@@ -16,4 +16,4 @@
 <p>I added a <a href='https://github.com/ceobit/coding-challenge/tree/master/typescript/apps/client/src/app/Converter'>directory</a> Converter, inside the directory are a component, a file with a description of styles and a file with unit tests </p>
 <p>I added an API file and a file with constants as well</p>
 
-<p><a href='https://github.com/ceobit/coding-challenge/blob/master/typescript/apps/client-e2e/src/integration/converter-e2e.spec.tsx'>Here are the e2e tests</p>
+<p><a href='https://github.com/ceobit/coding-challenge/blob/master/typescript/apps/client-e2e/src/integration/converter-e2e.spec.tsx'>Here</a> are the e2e tests</p>
