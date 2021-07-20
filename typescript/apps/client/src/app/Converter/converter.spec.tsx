@@ -1,5 +1,5 @@
 import React from 'react';
-import {cleanup, render, screen, fireEvent} from '@testing-library/react';
+import {cleanup, render, screen} from '@testing-library/react';
 import '@testing-library/jest-dom';
 
 
@@ -40,5 +40,4 @@ describe('Converter component', () => {
     // I use here a specific value of 0.812838 from the server, only because it is fake data on the server
     expect(rate.quotes.EUR).toEqual(0.812838);
   })
-
 })
